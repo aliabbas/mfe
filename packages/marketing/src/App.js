@@ -9,7 +9,7 @@ const generateClassName = createGenerateClassName({
   productionPrefix: 'ma'
 });
 
-// recomment
+// comment
 export default () => {
   return (
     <div>
