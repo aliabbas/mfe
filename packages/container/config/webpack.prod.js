@@ -5,6 +5,7 @@ const packageJson = require('../package.json');
 
 // get from SECRETS
 const domain = process.env.PRODUCTION_DOMAIN
+console.log('production domain: ' + domain)
 
 const prodConfig = {
   mode: 'production',
