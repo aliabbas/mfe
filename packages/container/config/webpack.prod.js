@@ -5,7 +5,7 @@ const packageJson = require('../package.json');
 
 // get from SECRETS
 const domain = process.env.PRODUCTION_DOMAIN
-console.log('production domain -> ' + domain)
+console.log('domain -> ' + domain)
 
 const prodConfig = {
   mode: 'production',
@@ -18,7 +18,7 @@ const prodConfig = {
       name: 'container',
       filename: 'remoteEntry',
       remotes: {
-        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`
+        marketing: `marketing@https://${domain}/marketing/latest/remoteEntry.js`
       },
       shared: packageJson.dependencies
     })
